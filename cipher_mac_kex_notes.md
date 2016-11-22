@@ -109,3 +109,38 @@ Default order (server): umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sh
 Default order (client): curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1
 
 Default order (server): curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1
+
+
+## Fedora Core 1
+
+### Ciphers
+- aes128-cbc
+- 3des-cbc
+- blowfish-cbc
+- cast128-cbc
+- arcfour
+- aes192-cbc
+- aes256-cbc
+
+Default order (client): aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,arcfour,aes192-cbc,aes256-cbc
+Default order (server): aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,arcfour,aes192-cbc,aes256-cbc
+
+### MACs
+- hmac-sha1
+- hmac-sha1-96
+- hmac-md5
+- hmac-md5-96
+- hmac-ripemd160
+- hmac-ripemd160@openssh.com
+
+Default order (client): Not given
+Default order (server): Not given
+
+### Key Exchange Algorithm
+- diffie-hellman-group-exchange-sha1
+- diffie-hellman-group1-sha1
+- diffie-hellman-group-exchange-sha1
+- diffie-hellman-group1-sha1
+
+Default order (client): Not given
+Default order (server): Not given
