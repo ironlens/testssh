@@ -1,5 +1,13 @@
 # Cipher and Message Authentication Code Support
 
+## Easy way
+- ssh -Q cipher
+- ssh -Q mac
+- ssh -Q kex
+
+- man sshd_config (search for hmac/cipher/kex) *should indicate defaults*
+- man ssh_config (search for hmac/cipher/kex) *should indicate defaults*
+
 For systems that don't list all supported ciphers, mac and kex in the documentation, the approach described http://superuser.com/a/869005/385596 will help:
 - strings /usr/sbin/sshd |grep mac
 
